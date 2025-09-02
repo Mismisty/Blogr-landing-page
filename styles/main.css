@@ -1,0 +1,594 @@
+/*paragraphs*/
+/*headings, footer menus*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-size: 17px;
+}
+
+img {
+  max-inline-size: 100%;
+}
+
+.bg-intro-container {
+  width: 100%;
+  height: 600px;
+  background-image: url("../images/bg-pattern-intro-mobile.svg"), linear-gradient(135deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  border-bottom-left-radius: 100px;
+  background-size: 192%;
+  background-position: 30% 50%, 0% 0%;
+}
+
+.brand-toggles {
+  padding: 3.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.open-close-btns {
+  display: flex;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+.open-btn {
+  cursor: pointer;
+}
+
+.close-btn {
+  position: absolute;
+  cursor: pointer;
+}
+
+.logo img {
+  width: 5rem;
+}
+
+/*-----MOBILE NAVIGATION MENU------*/
+.hidden {
+  display: none;
+}
+
+.nav-wrapper {
+  background: hsl(0, 100%, 100%);
+  text-align: center;
+  margin: 0 2rem;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  box-shadow: 1px 3px 5px #9c9a9a;
+  display: none;
+}
+.nav-wrapper ul {
+  list-style-type: none;
+}
+.nav-wrapper .navbar-heading {
+  padding: 1.5rem;
+}
+.nav-wrapper li a {
+  color: hsl(237, 23%, 31%);
+  font-weight: 600;
+  text-decoration: none;
+}
+.nav-wrapper .arrow-mobile {
+  stroke: hsl(355, 100%, 74%);
+}
+
+.nav-wrapper.show-menu {
+  display: block;
+}
+
+/*-------SUB-MENU SECTION--------*/
+.sub-menu {
+  background: rgb(238, 238, 238);
+  margin: 1.5rem auto;
+  border-radius: 5px;
+  list-style-type: none;
+  padding: 1rem;
+  width: 85%;
+  display: none;
+}
+
+.sub-menu.show {
+  display: block;
+}
+
+.sub-menu li {
+  margin-bottom: 1rem;
+}
+
+.active {
+  display: block;
+}
+
+.horizontal-line {
+  border: 1px solid rgb(224, 219, 219);
+  width: 85%;
+  margin: auto;
+}
+
+.cta-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem;
+  padding-bottom: 2rem;
+}
+
+.login-btn {
+  color: hsl(237, 17%, 21%);
+  font-size: 17px;
+  font-weight: 600;
+  width: 6rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.signup-btn {
+  color: hsl(0, 100%, 100%);
+  width: 6rem;
+  font-weight: 600;
+  padding: 10px 12px;
+  border-radius: 16px;
+  border: none;
+  background-image: linear-gradient(135deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  cursor: pointer;
+}
+
+/*-------MODERN SECTION-------*/
+.modern-platform {
+  font-family: "Ubuntu", sans-serif;
+  color: hsl(0, 100%, 100%);
+  width: 20rem;
+  margin: 4rem auto;
+  text-align: center;
+}
+
+.modern-platform p {
+  padding: 1rem;
+}
+
+.start-learn-btns {
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.start-btn {
+  color: hsl(356, 100%, 66%);
+  font-weight: 600;
+  background: hsl(0, 100%, 100%);
+  padding: 0.8rem 0.85rem;
+  width: 7.5rem;
+  border: none;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+
+.learn-btn {
+  color: hsl(0, 100%, 100%);
+  font-weight: 600;
+  background: transparent;
+  padding: 0.8rem 0.85rem;
+  width: 7.5rem;
+  border: 1px solid hsl(0, 100%, 100%);
+  border-radius: 3rem;
+  cursor: pointer;
+}
+
+/*------MAIN SECTION--------*/
+.designed h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 19px;
+  color: hsl(208, 49%, 24%);
+  text-align: center;
+  margin: 7rem 0 3rem;
+}
+
+.mobile-editor {
+  width: 375px;
+}
+
+.desktop-editor {
+  display: none;
+}
+
+.extensible {
+  margin-top: 3rem;
+}
+
+.extensible h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5rem;
+  color: hsl(208, 49%, 24%);
+  text-align: center;
+  padding: 0 6rem;
+}
+
+.extensible p {
+  font-family: "Overpass", sans-serif;
+  font-size: 17px;
+  margin: 1rem 2rem 2.5rem;
+  color: hsl(207, 13%, 34%);
+  text-align: center;
+  padding: 0 0.5rem;
+  line-height: 1.5;
+}
+
+/*-----MIDDLE SECTION----*/
+.middle-section {
+  position: relative;
+  background-image: url("../images/bg-pattern-circles.svg"), linear-gradient(180deg, hsl(237, 23%, 31%), hsl(237, 17%, 21%));
+  background-size: 155%;
+  background-position: -100px -240px, 0px 0px;
+  background-repeat: no-repeat;
+  margin: 15rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 95vh;
+  border-radius: 0 100px 0 100px;
+}
+
+.phones {
+  position: absolute;
+  width: 375px;
+  top: -30%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.state-of {
+  text-align: center;
+}
+
+.state-of h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  color: hsl(0, 100%, 100%);
+  font-weight: 600;
+  text-align: center;
+  margin: 15rem 3rem 0;
+}
+
+.state-of p {
+  font-family: "Overpass", sans-serif;
+  color: hsl(237, 11%, 62%);
+  font-weight: 300;
+  margin: 1.5rem 2.5rem 0;
+  text-align: center;
+  line-height: 1.75;
+}
+
+/*-----LAPTOP SECTION------*/
+.features {
+  margin-top: -12rem;
+}
+
+.feature {
+  text-align: center;
+}
+
+.feature-title {
+  color: hsl(208, 49%, 24%);
+  margin: 2rem auto;
+}
+
+.feature-description {
+  font-family: "Overpass";
+  font-size: 17px;
+  margin: 1rem 2rem 2.5rem;
+  color: hsl(207, 13%, 34%);
+  margin: 0 2rem 1rem;
+  line-height: 1.5;
+}
+
+/*-------FOOTER SECTION MOBILE--------*/
+.footer-logo img {
+  margin-bottom: 1.3rem;
+  width: 4.5rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 4rem 0;
+  background: hsl(240, 10%, 16%);
+  padding: 3.5rem;
+  border-top-right-radius: 100px;
+}
+
+.bottom-navbar h3 {
+  color: hsl(0, 100%, 100%);
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+  line-height: 1.5;
+}
+
+.bottom-submenu a {
+  font-size: 0.85rem;
+  color: hsl(240, 3%, 61%);
+  line-height: 1.5;
+}
+
+.desktop-laptop {
+  display: none;
+}
+
+/*------DESKTOP SECTION--------*/
+@media screen and (min-width: 768px) {
+  .bg-intro-container {
+    width: 100%;
+    height: 600px;
+    background-image: url("../images/bg-pattern-intro-desktop.svg"), linear-gradient(135deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    border-bottom-left-radius: 100px;
+    background-size: 192%;
+    background-position: 30% 50%, 0% 0%;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .brand-toggles {
+    margin-left: 4rem;
+  }
+  .nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+    box-shadow: none;
+    flex: 1;
+  }
+  .main-navbar {
+    background: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+  }
+  .main-navbar > ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-wrapper li a {
+    color: hsl(0, 100%, 100%);
+    padding: 0.5rem 0;
+  }
+  .nav-wrapper .navbar-heading {
+    padding: 0.85rem;
+  }
+  .navbar-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    position: relative;
+  }
+  .sub-menu {
+    position: absolute;
+    flex-direction: column;
+    background: white;
+    top: 3rem;
+    left: -1rem;
+    width: 10rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+  .sub-menu li a {
+    color: black;
+    padding: 0;
+    font-weight: 400;
+  }
+  .main-navbar .arrow-mobile {
+    stroke: hsl(0, 100%, 100%);
+  }
+  .cta-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 4rem;
+  }
+  .login-btn,
+  .signup-btn {
+    margin: 0;
+  }
+  .login-btn {
+    color: hsl(0, 100%, 100%);
+  }
+  .signup-btn {
+    color: hsl(356, 100%, 66%);
+    background: hsl(0, 100%, 100%);
+  }
+  .navbar-heading a {
+    position: relative;
+    display: inline-block;
+  }
+  .navbar-heading a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-out;
+  }
+  .navbar-heading a:hover::after {
+    width: 100%;
+  }
+  /*----SUBMENU HOVER--------*/
+  .sub-menu li a:hover {
+    color: hsl(237, 23%, 31%);
+    font-weight: 700;
+  }
+  .signup-btn:hover {
+    background: hsl(355, 100%, 74%);
+    color: hsl(0, 100%, 100%);
+  }
+  .start-btn:hover {
+    color: hsl(0, 100%, 100%);
+    background: hsl(355, 100%, 74%);
+  }
+  .learn-btn:hover {
+    color: hsl(355, 100%, 74%);
+    background: hsl(0, 100%, 100%);
+  }
+  .horizontal-line {
+    display: none;
+  }
+  .open-btn {
+    display: none;
+  }
+  .active {
+    display: none;
+  }
+  .modern-platform {
+    width: 100%;
+  }
+  /*-------DESIGNED--------*/
+  .designed {
+    margin-top: -1rem;
+  }
+  .designed h2 {
+    font-size: 1.5rem;
+  }
+  /*-----MID SECTION----------*/
+  .mid-section {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .extensible {
+    width: 50%;
+  }
+  .desktop-editor {
+    display: block;
+    transform: translateX(225px);
+    margin-top: -8rem;
+    width: 994px;
+  }
+  .mobile-editor {
+    display: none;
+  }
+  .extensible p {
+    font-family: "Overpass", sans-serif;
+    font-size: 0.75rem;
+    text-align: left;
+    margin: 1rem 0 5rem 6rem;
+    line-height: 1.8;
+  }
+  .extensible h3 {
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: left;
+    padding-left: 6.5rem;
+  }
+  /*------PHONE SECTION-------*/
+  .middle-section {
+    display: flex;
+    flex-direction: row;
+    background-size: 700px, cover;
+    background-position: -140px -355px, 0 0;
+    height: 46vh;
+    margin: 4rem auto 2rem;
+  }
+  .state-of {
+    width: 50%;
+    position: absolute;
+    left: 33rem;
+  }
+  .state-of h2 {
+    text-align: left;
+    margin: 0 0 1rem;
+  }
+  .state-of p {
+    text-align: left;
+    margin: 0;
+  }
+  .phones {
+    position: static;
+    margin-left: 18rem;
+    margin-top: 1rem;
+  }
+  /*-----LAPTOP SECTION-----*/
+  .mobile-laptop {
+    display: none;
+  }
+  .features {
+    display: flex;
+    flex-direction: row;
+    margin: 4rem;
+  }
+  .feature-flex {
+    display: flex;
+    flex-direction: column;
+    width: 72%;
+    margin-left: -19rem;
+    margin-top: 7rem;
+    gap: 3rem;
+  }
+  .feature {
+    text-align: left;
+  }
+  .feature-title {
+    margin-bottom: 1rem;
+  }
+  .feature-description {
+    margin: 0;
+  }
+  .desktop-laptop {
+    display: block;
+    transform: translateX(-289px);
+  }
+  /*----FOOTER SECTION------*/
+  .info {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 200px;
+  }
+  .footer-logo {
+    margin-left: 3rem;
+  }
+  .bottom-navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+  }
+  /*------JAVASCRIPT FUNCTION------*/
+  .arrow-mobile {
+    transition: transform 0.3s ease;
+  }
+  .arrow-mobile.rotated {
+    transform: rotate(180deg);
+  }
+}/*# sourceMappingURL=main.css.map */
